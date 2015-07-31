@@ -77,7 +77,7 @@ getModuleFromCache = function(name) {
 };
 
 isRelativePath = function(name) {
-  return (name.indexOf('./')) === 0;
+  return (name.indexOf('./')) === 0 || (name.indexOf('../') === 0);
 };
 
 toFullPath = function(relativePath) {
